@@ -22,20 +22,28 @@ const sum = function(set) {
   return result
 };
 
-const multiply = function() {
-	let result
-  for(i = 1; i<set.length; i++) {
-    result += Number(set[i])
+const multiply = function(set) {
+	let result = 1
+  for(i = 0; i < set.length; i++) {
+    result *= Number(set[i])
   }
-  return toString(result)
+  return result
 };
 
-const power = function() {
-	
+const power = function(a,b) {
+	return Math.pow(a,b)
 };
 
-const factorial = function() {
-	
+const factorial = function(x) {
+	let result = 1
+  if (x == 0) {
+    return 1
+  } else {
+    for(i = x; i > 0; i--) {
+      result *= i
+    }
+  }
+  return result
 };
 
 // Do not edit below this line
